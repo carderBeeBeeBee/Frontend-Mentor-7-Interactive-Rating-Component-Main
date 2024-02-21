@@ -117,17 +117,55 @@ button {
     font-weight: 700;
 }
 
-.thank-you-state {
-    align-items: center;
-}
-
 .hidden {
     display: none;
     height: 0;
 }
 
 .dim {
-    background-color: grey;
+    background-color: #959eac;
+}
+
+.thank-you-state {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.thank-you-state img {
+    width: 150px;
+}
+
+.selection-container {
+    display: flex;
+    width: 65%;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #262F38;
+    justify-content: center;
+    align-items: center;
+}
+
+.selection-container h3 {
+    font-size: 1rem;
+    color: #fb7413;
+    font-weight: 400;
+}
+
+.thank-you-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40%;
+}
+
+h2 {
+    color: white;
+}
+
+.thank-you-text p {
+    text-align: center;
+    font-size: 1rem;
 }
 
 .attribution { 
