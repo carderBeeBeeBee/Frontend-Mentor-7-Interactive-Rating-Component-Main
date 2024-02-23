@@ -29,11 +29,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 25px;
+    padding: 30px 20px;
     height: 55%;
-    /* max-width: 300px; */
-    max-height: 400px;
-    min-height: 350px;
+    max-width: 415px;
 }
 
 .rating-state, .thank-you-state {
@@ -45,8 +43,13 @@ body {
 
 h1 {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     font-weight: 700;
+    margin-bottom: -10px;
+}
+
+p {
+    line-height: 1.5rem;
 }
 
 .img-container, .numbers button {
@@ -62,11 +65,12 @@ h1 {
     height: 40px;
     border: none;
     color: #7c8798;
+    font-size: 1rem;
 }
 
 .img-container img {
-    width: 13px;
-    height: 13px;
+    width: 35%;
+    height: 35%;
 }
 
 #star-icon {
@@ -82,8 +86,8 @@ h1 {
     background-color: #fb7413;
     color: white;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 0.7rem;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
 }
 
 #submit-btn:hover {
@@ -128,18 +132,17 @@ button {
 
 .thank-you-state {
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .thank-you-state img {
-    width: 150px;
+    width: 145px;
 }
 
 .selection-container {
     display: flex;
-    width: 65%;
-    padding: 10px;
-    border-radius: 12px;
+    padding: 8px 10px;
+    border-radius: 25px;
     background-color: #262F38;
     justify-content: center;
     align-items: center;
@@ -151,16 +154,21 @@ button {
     font-weight: 400;
 }
 
-.thank-you-text {
+/* .thank-you-text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 40%;
+} */
+
+.thank-you-state p {
+    text-align: center;
 }
 
 h2 {
     color: white;
+    font-size: 1.7rem;
 }
 
 .thank-you-text p {
@@ -180,4 +188,54 @@ h2 {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 576px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .container {
+        border-radius: 25px;
+        padding: 30px;
+        min-height: 400px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .img-container, .numbers button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #262F38;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: none;
+        color: #7c8798;
+        font-size: 1rem;
+    }
+
+    .thank-you-state {
+        padding: 20px 0px;
+    }
+
+    @media (max-height: 435px) {
+        .attribution {
+            display: none;
+        }
+    }
+
+    @media (max-height: 400px) {
+        .container {
+            top: 0;
+            transform: translate(-50%, 0%);
+        }
+    }
+
 }
