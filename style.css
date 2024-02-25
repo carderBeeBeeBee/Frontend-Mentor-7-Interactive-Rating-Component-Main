@@ -224,18 +224,17 @@ h2 {
     .thank-you-state {
         padding: 20px 0px;
     }
+}
 
-    @media (max-height: 435px) {
-        .attribution {
-            display: none;
-        }
+@media (max-height: 435px) {
+    .attribution {
+        display: none;
     }
+}
 
-    @media (max-height: 400px) {
-        .container {
-            top: 0;
-            transform: translate(-50%, 0%);
-        }
+@media (max-height: 400px) {
+    .container {
+        top: 0;
+        transform: translate(-50%, 0%);
     }
-
 }
